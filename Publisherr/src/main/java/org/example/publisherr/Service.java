@@ -1,12 +1,11 @@
-package com.example.demo.Controller;
+package org.example.publisherr;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 @Slf4j
-@Service
-public class service {
+@org.springframework.stereotype.Service
+public class Service {
     @Autowired
     private Publisher publisher;
 

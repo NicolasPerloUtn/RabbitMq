@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-public class notificacionController {
+public class receptor {
 
     @RabbitListener(queues = "#{@queue.name}")
     public void receive(@Payload String message) {
