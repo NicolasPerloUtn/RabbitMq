@@ -9,7 +9,12 @@ public class Service {
     @Autowired
     private Publisher publisher;
 
-    public void sendToRabbit(String message) {
+//    public void sendToRabbit(String message) {
+//        log.info("Message '{}' enviado ... ", message);
+//        this.publisher.send(message);
+//    }
+
+    public void sendToRabbit(Mensaje message) {
         log.info("Message '{}' enviado ... ", message);
         this.publisher.send(message);
     }

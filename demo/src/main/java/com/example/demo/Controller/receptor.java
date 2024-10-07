@@ -11,10 +11,14 @@ public class receptor {
 
     @RabbitListener(queues = "#{@queue.name}")
     public void receive(@Payload String message) {
+        try {
+            log.info("Mensaje recibido {}", message);
+            makeSlow();
+        }
+        catch (Exception e) {
+            log.error("Error al procesar el mensaje: ", e);
+        }
 
-        log.info("Mensaje recibido {}", message);
-
-        makeSlow();
     }
 
     private void makeSlow() {

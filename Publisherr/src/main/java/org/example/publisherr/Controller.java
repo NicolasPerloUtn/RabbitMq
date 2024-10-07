@@ -9,8 +9,13 @@ public class Controller {
     @Autowired
     private Service service;
 
-    @GetMapping("/message")
-    public void sendMessage(@RequestParam String message) {
+//    @GetMapping("/message")
+//    public void sendMessage(@RequestParam String message) {
+//        service.sendToRabbit(message);
+//    }
+
+    @PostMapping("/message")
+    public void sendMessage(@RequestBody Mensaje message) {
         service.sendToRabbit(message);
     }
 }
