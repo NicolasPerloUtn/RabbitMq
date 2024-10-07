@@ -1,4 +1,4 @@
-package org.example.publisherr;
+package org.example.publisherr.configs;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;

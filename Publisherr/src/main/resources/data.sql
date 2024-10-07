@@ -1,0 +1,1 @@
+INSERT INTO mensaje (asunto, mensaje) VALUES ('hola', 'mensaje de prueba')

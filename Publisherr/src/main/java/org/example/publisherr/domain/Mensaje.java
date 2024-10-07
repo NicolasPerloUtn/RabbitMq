@@ -1,4 +1,4 @@
-package org.example.publisherr;
+package org.example.publisherr.domain;
 
 import lombok.Data;
 
