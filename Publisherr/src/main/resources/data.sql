@@ -1,1 +1,1 @@
-INSERT INTO mensaje (asunto, mensaje) VALUES ('hola', 'mensaje de prueba')
+INSERT INTO mensaje (asunto, mensaje, fecha) VALUES ('hola', 'mensaje de prueba', '2024-10-08')
